@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -s https://raw.githubusercontent.com/zunxbt/logo/main/logo.sh | bash
+curl -s https://raw.githubusercontent.com/jumpsre/nodes/refs/heads/main/logo.sh | bash
 sleep 3
 
 # Function to display messages
@@ -143,7 +143,7 @@ ts_file_Setup() {
     fi
     
     # Download the new index.ts file
-    wget -O index.ts https://raw.githubusercontent.com/zunxbt/Eclipse-NFT/main/index.ts
+    wget -O index.ts https://raw.githubusercontent.com/jumpsre/Eclipse-NFT/main/index.ts
 
 # Ask the user for the required information
 read -p "Enter NFT Name: " nft_name
@@ -189,7 +189,7 @@ if [ -f upload.ts ]; then
     fi
     
     # Download the new index.ts file
-    wget -O upload.ts https://raw.githubusercontent.com/zunxbt/Eclipse-NFT/main/upload.ts
+    wget -O upload.ts https://raw.githubusercontent.com/jumpsre/Eclipse-NFT/main/upload.ts
     rm -f tsconfig.json
     npx tsc --init
 }
