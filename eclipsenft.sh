@@ -70,7 +70,7 @@ setup_wallet() {
             "Use existing wallet")
                 show "Recovering from existing wallet..."
                 KEYPAIR_PATH="$KEYPAIR_DIR/eclipse-wallet.json"
-                solana-keygen recover -o "$KEYPAIR_PATH" --force
+                solana-keygen recover 'prompt://?key=0/0' -o "$KEYPAIR_PATH" --force
                 if [[ $? -ne 0 ]]; then
                     show "Failed to recover the existing wallet. Exiting."
                     exit 1
